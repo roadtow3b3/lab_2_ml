@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  lab2-ml:
+    build: .
+    container_name: lab2-ml
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./:/app
+    working_dir: /app
